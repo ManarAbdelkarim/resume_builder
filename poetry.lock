@@ -543,28 +543,7 @@ pytz = [
     {file = "pytz-2021.1-py2.py3-none-any.whl", hash = "sha256:eb10ce3e7736052ed3623d49975ce333bcd712c7bb19a58b9e2089d4057d0798"},
     {file = "pytz-2021.1.tar.gz", hash = "sha256:83a4a90894bf38e243cf052c8b58f381bfe9a7a483f6a9cab140bc7f702ac4da"},
 ]
-silx = [
-    {file = "silx-0.15.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:4d4e79a644d70cb3e5e0eaa9f2af2c2c2a67eb3c48d3cfe782aad1b4de30ece5"},
-    {file = "silx-0.15.2-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9f36f78cd8084b2ee3ed4771163b7666646ed0073462ed581aec1d60f1bc04fd"},
-    {file = "silx-0.15.2-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:6ffbf0a0ba7d782a5e41f7c073142be7baf79401a6c00f83ae17b948a0a2f24b"},
-    {file = "silx-0.15.2-cp36-cp36m-win_amd64.whl", hash = "sha256:b614598ff35e74041415f04aea5511c5f0b5b47135382301761d1f5a30677e54"},
-    {file = "silx-0.15.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:384859b1925ba3c241aaa6eece4aa4ecfc9f9da37306d427fd24178f7d6f789d"},
-    {file = "silx-0.15.2-cp37-cp37m-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:13d61d2f65f5866c1f0b09333eca5de4dc9961b4cc9aa301fceba86728bb81b1"},
-    {file = "silx-0.15.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b980d41724ba01a4c83051093c25543b11d06ef0115cc8e4d1a6205b7e458740"},
-    {file = "silx-0.15.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:dc0cba5cb466c62f008de2dafb811bc86f4bb6301a3528ba19cc0502084a8b5d"},
-    {file = "silx-0.15.2-cp37-cp37m-win_amd64.whl", hash = "sha256:a0f58b8dfcfc8c53bb6c169a94fd5ec7fb944eb32f52a908288216e319e1c324"},
-    {file = "silx-0.15.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:6c31434ff4f5186c7b166d5c33c752860905c9f41cf7e91d1a3f57e01022f13f"},
-    {file = "silx-0.15.2-cp38-cp38-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:0b056c5647abb003051b7c498347971942d23581dae6c734c0465302f84a8d38"},
-    {file = "silx-0.15.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fb8ef81802927beefcc43a7c3a92e5868e7efd673b554999d512b68ed5b67d31"},
-    {file = "silx-0.15.2-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:02b5991973045c0d71a9a84d08bd2a3c42b385e8a05aa3ecce29c76781ff57e0"},
-    {file = "silx-0.15.2-cp38-cp38-win_amd64.whl", hash = "sha256:715246d655399a7c0b52697ed8023c678122186dfe87fd78e39d75ad15cc8f10"},
-    {file = "silx-0.15.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:a0d9eabf97ef9e1e1f5bac0c160d8dc05f1e0ea9d662326df9e8a76d98d72a31"},
-    {file = "silx-0.15.2-cp39-cp39-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:f6da782560d3239a5f6d81966a60a5cd5bcdcf52576881149549b28c56cf840b"},
-    {file = "silx-0.15.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:70dd13bf70235c5a8aa9d2d7be9734dece26ef6f3206321861649609cec3c9b9"},
-    {file = "silx-0.15.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl", hash = "sha256:b133600f1eda78a3d56040f5f0b98730f42fac2dd330c37c8887f5307f8396fd"},
-    {file = "silx-0.15.2-cp39-cp39-win_amd64.whl", hash = "sha256:9b1d0a5739a4f8a09ec91e3f0ddb5bcd10be2c044c17f550f646e5161206ea86"},
-    {file = "silx-0.15.2.tar.gz", hash = "sha256:494cf5caa6267bebeb6aa19f3aee9e5c2f86ceba253b133f0709fbe0d47a84cc"},
-]
+
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
