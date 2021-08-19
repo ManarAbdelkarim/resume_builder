@@ -6,22 +6,45 @@ from rest_framework.decorators import api_view
 
 # Create your views here.
 def home(request):
-    return render(request, 'index.html',{})
+    return render(request, 'cv.html',{})
 
 class PersonalInfoCreateView(CreateView):
-    template_name = "personal_create.html"
+    template_name = "index.html"
     model = PersonalInfo
     fields = '__all__'
 
-class WorkExperienceCreateView(CreateView):
-    template_name = "work_create.html"
-    model = WorkExperience
-    fields = ['job_title','company','personal_info','description']
+def cv_maker(request,id):
+    user_id = id
+    personal = PersonalInfo.objects.get(id=user_id)
+    info = {
+    'full_name' :  personal.full_name,
+    'job_title' :  personal.job_title,
+    'email' : personal.email,
+    'website' : personal.website,
+    'phone_number' : personal.phone_number,
+    'personal_info' : personal.personal_info,
+    'key_skills' : personal.key_skills,
+    'job_title_c' : personal.job_title,
+    'company' : personal.company,
+    'description_c' : personal.description_c,
+    'university_name' : personal.university_name,
+    'major' : personal.major,
+    'description_u' : personal.description_u,
+    'user_image' : personal.user_image
+    }
+    
+    return render(request, 'cv.html',{'info': info})
+   
 
-class EducationCreateView(CreateView):
-    template_name = "education_create.html"
-    model = Education
-    fields =['major','personal_info','description']
+# class WorkExperienceCreateView(CreateView):
+#     template_name = "work_create.html"
+#     model = WorkExperience
+#     fields = ['job_title','company','personal_info','description']
+
+# class EducationCreateView(CreateView):
+#     template_name = "education_create.html"
+#     model = Education
+#     fields =['major','personal_info','description']
 
 # @api_view(['GET'])
 # def is_passed(request):

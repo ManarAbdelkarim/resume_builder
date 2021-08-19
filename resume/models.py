@@ -11,35 +11,26 @@ from phonenumber_field.modelfields import PhoneNumberField
 class PersonalInfo(models.Model):
 
     full_name =  models.CharField(max_length=100)
+    user_image = models.ImageField(upload_to="static/images")
     job_title =  models.CharField(max_length=200)
     email = models.EmailField()
     website = models.URLField()
     phone_number = PhoneNumberField()
     personal_info = models.TextField(default='a summary about yourself')
     key_skills = models.TextField()
+    job_title_c = models.CharField(max_length=200)
+    company = models.CharField(max_length=200)
+    description_c = models.TextField()
+    university_name = models.CharField(max_length=200)
+    major = models.CharField(max_length=200)
+    description_u = models.TextField()
+  
+  
     def __str__(self):
         return self.full_name
 
+    def get_absolute_url(self):
+        return reverse('cv', args=[str(self.id)])
 
-class WorkExperience(models.Model):
-    job_title = models.CharField(max_length=200)
-    company = models.CharField(max_length=200)
-    personal_info = models.ForeignKey(PersonalInfo(), on_delete=models.CASCADE)
-    description = models.TextField()
-
-    def __str__(self):
-        return self.job_title
-
-        
-
-class Education(models.Model):
-    university_name = models.CharField(max_length=200)
-    major = models.CharField(max_length=200)
-    personal_info = models.ForeignKey(PersonalInfo(), on_delete=models.CASCADE)
-    description = models.TextField()
-  
-  
-    def __str__(self):
-        return self.university_name
 
 

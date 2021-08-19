@@ -10,6 +10,12 @@ Django = "^3.2.6"
 django-phonenumber-field = "^5.2.0"
 phonenumbers = "^8.12.30"
 djangorestframework = "^3.12.4"
+Pillow = "^8.3.1"
+crispy = "^0.7.3"
+gunicorn = "^20.1.0"
+django-environ = "^0.4.5"
+django-cors-headers = "^3.8.0"
+psycopg2 = "^2.9.1"
 
 [tool.poetry.dev-dependencies]
 
